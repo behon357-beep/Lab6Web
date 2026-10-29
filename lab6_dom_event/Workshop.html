@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <div class="container">
+        <h1>Pendaftaran Workshop</h1>
+        <p>Silakan isi formulir di bawah ini.</p>
+
+        <form id="formWorkshop" novalidate>
+            <label for="nama">Nama lengkap</label>
+            <input type="text" id="nama" maxlength="50">
+            <small>Jumlah karakter: <span id="jumlahKarakter">0</span>/50</small>
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="sesi">Pilih sesi workshop</label>
+            <select id="sesi">
+                <option value="">-- Pilih sesi --</option>
+                <option value="HTML dan CSS">HTML dan CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+
+            <p id="pesan" aria-live="polite"></p>
+
+            <button type="submit">Daftar Sekarang</button>
+            <button type="reset" id="tombolReset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
